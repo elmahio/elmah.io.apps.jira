@@ -1,0 +1,4 @@
+# Jira integration for elmah.io
+
+Integrates Jira with elmah.io. To install the integration, go to the Apps tab on your log settings and add this app.
+

@@ -1,0 +1,47 @@
+{
+	"variables": [{
+		"key": "site",
+		"name": "Site",
+		"description": "They site name containing your project(s)",
+		"example": "hoolixyz",
+		"type": "text",
+		"required": true
+	},{
+		"key": "project",
+		"name": "Project",
+		"description": "They key of the project to create issues on",
+		"example": "NUCLEUS",
+		"type": "text",
+		"required": true
+	},{
+		"key": "username",
+		"name": "Username",
+		"description": "The username of a Jira user able to create issues",
+		"example": "gavinbelson",
+		"type": "text",
+		"required": true
+	},{
+		"key": "password",
+		"name": "Password",
+		"description": "The password of a Jira user able to create issues",
+		"example": "betterplace",
+		"type": "text",
+		"required": true
+	}],
+	"rule": {
+		"title": "Create a new issue on Jira on new errors",
+		"query": "isNew:true AND (severity:Error OR severity:Fatal)",
+		"then": {
+			"type": "http",
+			"url": "https://$site.atlassian.net/rest/api/2/issue",
+			"method": "post",
+			"body": "{ \"fields\": { \"project\": { \"key\": \"$project\" }, \"summary\": \"$message\", \"description\": \"Time: $time\\nURL: $url\\nHostname: $hostName\\nStatus Code: $statusCode\\nType: $type\\nSource: $source\\nUser: $user\", \"issuetype\": { \"name\": \"Bug\" } } }",
+			"contentType": "application/json",
+			"authentication": {
+				"type": "basic",
+				"username": "$username",
+				"password": "$password"
+			}			
+		}
+	}
+}
