@@ -35,7 +35,7 @@
 			"type": "http",
 			"url": "https://$site.atlassian.net/rest/api/2/issue",
 			"method": "post",
-			"body": "{ \"fields\": { \"project\": { \"key\": \"$project\" }, \"summary\": \"$message\", \"description\": \"Time: $time\\nURL: $url\\nHostname: $hostName\\nStatus Code: $statusCode\\nType: $type\\nSource: $source\\nUser: $user\", \"issuetype\": { \"name\": \"Bug\" } } }",
+			"body": "{ \"fields\": { \"project\": { \"key\": \"$project\" }, \"summary\": \"$message\", \"description\": \"{code}Time: $time\\nURL: $url\\nHostname: $hostName\\nStatus Code: $statusCode\\nType: $type\\nSource: $source\\nUser: $user\\n{code}\\nELMAH.io permalink: https://elmah.io/errorlog/error?logid=LOGID&id=MESSAGEID\", \"issuetype\": { \"name\": \"Bug\" } } }",
 			"contentType": "application/json",
 			"authentication": {
 				"type": "basic",
