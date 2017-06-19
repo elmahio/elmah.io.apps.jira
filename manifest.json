@@ -9,7 +9,7 @@
 	},{
 		"key": "project",
 		"name": "Project",
-		"description": "They key of the project to create issues on",
+		"description": "They key (not name) of the project to create issues on",
 		"example": "NUCLEUS",
 		"type": "text",
 		"required": true
