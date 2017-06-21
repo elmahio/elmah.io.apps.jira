@@ -41,7 +41,8 @@
 				"type": "basic",
 				"username": "$username",
 				"password": "$password"
-			}			
+			},
+			"testUrl": "https://$site.atlassian.net/rest/api/2/project/$project"
 		}
 	}
 }
