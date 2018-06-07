@@ -2,14 +2,14 @@
 	"variables": [{
 		"key": "site",
 		"name": "Site",
-		"description": "They site name containing your project(s)",
+		"description": "The site name containing your project(s)",
 		"example": "hoolixyz",
 		"type": "text",
 		"required": true
 	},{
 		"key": "project",
 		"name": "Project",
-		"description": "They key (not name) of the project to create issues on",
+		"description": "The key (not name) of the project to create issues on",
 		"example": "NUCLEUS",
 		"type": "text",
 		"required": true
