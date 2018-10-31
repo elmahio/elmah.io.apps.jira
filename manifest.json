@@ -25,7 +25,7 @@
 		"name": "Password",
 		"description": "The password of a Jira user able to create issues",
 		"example": "betterplace",
-		"type": "text",
+		"type": "password",
 		"required": true
 	}],
 	"rule": {
