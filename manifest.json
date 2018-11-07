@@ -1,4 +1,5 @@
 {
+	"helpUrl": "https://docs.elmah.io/elmah-io-apps-jira/",
 	"variables": [{
 		"key": "site",
 		"name": "Site",
