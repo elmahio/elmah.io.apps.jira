@@ -24,7 +24,7 @@
 	},{
 		"key": "password",
 		"name": "Password",
-		"description": "The password of a Jira user able to create issues",
+		"description": "The password of a Jira user or an API token able to create issues",
 		"example": "betterplace",
 		"type": "password",
 		"required": true
