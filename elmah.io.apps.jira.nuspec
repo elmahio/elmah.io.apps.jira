@@ -8,9 +8,10 @@
     <title>Jira Integration</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Create an issue on Jira when a new error is logged on elmah.io.</description>
-    <projectUrl>https://github.com/elmahio/elmah.io.apps.jira</projectUrl>
+    <projectUrl>https://elmah.io/</projectUrl>
+    <repository type="git" url="https://github.com/elmahio/elmah.io.apps.jira" />
     <iconUrl>https://elmah.io/images/appstore/elmah.io.apps.jira.png</iconUrl>
-	<tags>Error Exception Reporting Management Logging ELMAH Diagnostics Tracing Jira</tags>
+    <tags>Error Exception Reporting Management Logging ELMAH Diagnostics Tracing Jira</tags>
   </metadata>
   <files>
     <file src="manifest.json" target="manifest.json" />
