@@ -31,7 +31,7 @@
 	}],
 	"rule": {
 		"title": "Create a new issue on Jira on new errors",
-		"query": "isNew:true AND (severity:Error OR severity:Fatal)",
+		"query": "isNew:true AND (severity:Error OR severity:Fatal) AND NOT isUptime:true AND NOT isHeartbeat:true",
 		"then": {
 			"type": "http",
 			"url": "https://$site.atlassian.net/rest/api/2/issue",
